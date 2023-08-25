@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Data with Python</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.05.1/pyscript.css" />
+    <script defer src="https://pyscript.net/releases/2023.05.1/pyscript.js"></script>
+</head>
+<body>
+    <py-script src="./main.py"></py-script>
+    <py-config src="./pyscript.toml"></py-config>
+    <h1>Axel-Cleris Gailloty</h1>
+    <div>
+        <h3>Number of lines to show</h3>
+        <input type="number" id="nblines" />
+    </div>
+
+    <button py-click="show_lines" class="py-button">OK</button>
+    <div id="output-area"></div>
+
+      <py-repl>
+        ice_data
+      </py-repl>
+      <div id="graph-area"></div>
+</body>
+</html>
